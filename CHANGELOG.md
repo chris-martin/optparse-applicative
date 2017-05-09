@@ -1,3 +1,35 @@
+## Version 0.14.0.0 (15 May 2017)
+
+- Add Zsh and Fish completions with rich descriptions
+
+- Fix Bash completion with quotes and ~ expansion
+
+- Upgrade `str` and related builders to be polymorphic
+  over `IsString`. Allows `Text` and `Bytestring` to be
+  used naturally, but may require additional type signatures
+  in some cases.
+
+- Add suggestions to error message when a user mistypes a
+  command or option
+
+- Add `style` builder, for styling option descriptions
+
+- Improve error message for options when a required argument
+  is not supplied
+
+- Fix bug regarding flags with long options
+
+- Fix `noIntersperse` to be more like its namesake
+
+- Add `forwardOptions` builder, which will allow unknown options
+  and flags to be passed to an argument builder.
+  This is useful to mixed parsing environments, or wrappers to
+  other commands.
+
+- Add missing `Semigroup` instances
+
+- Doc
+
 ## Version 0.13.2.0 (9 Mar 2017)
 
 - Updated dependency bounds.
