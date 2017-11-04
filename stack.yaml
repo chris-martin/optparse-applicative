@@ -1,0 +1,7 @@
+resolver: nightly-2015-11-01
+
+packages:
+  - .
+
+extra-deps:
+  - fail-4.9.0.0
